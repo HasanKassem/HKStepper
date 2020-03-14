@@ -65,6 +65,8 @@ open class HKTimeStepper:  UIControl{
     /// Color of the buttons
     @IBInspectable public var buttonsColor: UIColor = .darkText {
         didSet {
+            plus.setImage(plus.image(for: .normal)?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)
+            minus.setImage(minus.image(for: .normal)?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)
             plus.tintColor = buttonsColor
             minus.tintColor = buttonsColor
         }

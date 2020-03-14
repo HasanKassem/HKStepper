@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   
 
   spec.name         = "HKStepper"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Custom stepper controls to select time or numbers."
 
   
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 
  
 
-  spec.source       = { :git => "https://github.com/HasanKassem/HKStepper.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/HasanKassem/HKStepper.git", :tag => "1.0.1" }
 
 
  
