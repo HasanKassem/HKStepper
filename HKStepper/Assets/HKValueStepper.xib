@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HKValueStepper" customModule="HKStepper" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="v9m-Y4-zZ4" id="qpk-nv-utu"/>
+                <outlet property="minus" destination="pAF-GI-Grq" id="Llj-Ye-x3T"/>
+                <outlet property="plus" destination="7lt-Xi-T6J" id="MlZ-ck-K72"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9m-Y4-zZ4">
+                    <rect key="frame" x="50" y="0.0" width="90" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lt-Xi-T6J">
+                    <rect key="frame" x="150" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7lt-Xi-T6J" secondAttribute="height" id="i86-dp-bea"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" image="plus.png">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="thin"/>
+                    </state>
+                    <connections>
+                        <action selector="plusAction:" destination="-1" eventType="touchUpInside" id="I1M-aT-cKy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAF-GI-Grq">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pAF-GI-Grq" secondAttribute="height" id="yUN-UR-1uN"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" image="minus.png">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="thin"/>
+                    </state>
+                    <connections>
+                        <action selector="minusAction:" destination="-1" eventType="touchUpInside" id="BoH-k4-2Rj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7lt-Xi-T6J" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="AMv-jn-Odm"/>
+                <constraint firstItem="pAF-GI-Grq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gbj-KW-ikb"/>
+                <constraint firstItem="pAF-GI-Grq" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Pqw-2d-S4W"/>
+                <constraint firstItem="pAF-GI-Grq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wuc-2o-Au7"/>
+                <constraint firstItem="7lt-Xi-T6J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aW3-7Z-xdZ"/>
+                <constraint firstItem="7lt-Xi-T6J" firstAttribute="leading" secondItem="v9m-Y4-zZ4" secondAttribute="trailing" constant="10" id="atH-9Z-T2a"/>
+                <constraint firstItem="v9m-Y4-zZ4" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="fru-XX-R4d"/>
+                <constraint firstItem="7lt-Xi-T6J" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="mb2-LG-D62"/>
+                <constraint firstItem="v9m-Y4-zZ4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="thO-dS-1FX"/>
+                <constraint firstItem="v9m-Y4-zZ4" firstAttribute="leading" secondItem="pAF-GI-Grq" secondAttribute="trailing" constant="10" id="wnH-Ot-inO"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.75" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="minus.png" width="66" height="66"/>
+        <image name="plus.png" width="66" height="66"/>
+    </resources>
+</document>

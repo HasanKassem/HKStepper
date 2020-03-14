@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9555969241D2C8D0028CEBC /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = B9555967241D2C8D0028CEBC /* minus.png */; };
+		B955596A241D2C8D0028CEBC /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B9555968241D2C8D0028CEBC /* plus.png */; };
+		B987DD53241ACADB005CC15E /* HKStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = B987DD51241ACADB005CC15E /* HKStepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B987DD5C241ACCAE005CC15E /* HKTimeStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = B987DD5B241ACCAE005CC15E /* HKTimeStepper.xib */; };
+		B987DD5E241ACD9F005CC15E /* HKTimeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987DD5D241ACD9F005CC15E /* HKTimeStepper.swift */; };
+		B9B9BDFB241CA06900F970F0 /* HKValueStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9BDFA241CA06900F970F0 /* HKValueStepper.swift */; };
+		B9B9BDFD241CA0C200F970F0 /* HKValueStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B9BDFC241CA0C200F970F0 /* HKValueStepper.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B9555967241D2C8D0028CEBC /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		B9555968241D2C8D0028CEBC /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		B987DD4E241ACADB005CC15E /* HKStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HKStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B987DD51241ACADB005CC15E /* HKStepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKStepper.h; sourceTree = "<group>"; };
+		B987DD52241ACADB005CC15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B987DD5B241ACCAE005CC15E /* HKTimeStepper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HKTimeStepper.xib; sourceTree = "<group>"; };
+		B987DD5D241ACD9F005CC15E /* HKTimeStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTimeStepper.swift; sourceTree = "<group>"; };
+		B9B9BDFA241CA06900F970F0 /* HKValueStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKValueStepper.swift; sourceTree = "<group>"; };
+		B9B9BDFC241CA0C200F970F0 /* HKValueStepper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKValueStepper.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B987DD4B241ACADB005CC15E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B955596F241D2E960028CEBC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B987DD5D241ACD9F005CC15E /* HKTimeStepper.swift */,
+				B9B9BDFA241CA06900F970F0 /* HKValueStepper.swift */,
+				B987DD51241ACADB005CC15E /* HKStepper.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B9555970241D2EA00028CEBC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B987DD5B241ACCAE005CC15E /* HKTimeStepper.xib */,
+				B9B9BDFC241CA0C200F970F0 /* HKValueStepper.xib */,
+				B9555967241D2C8D0028CEBC /* minus.png */,
+				B9555968241D2C8D0028CEBC /* plus.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B987DD44241ACADB005CC15E = {
+			isa = PBXGroup;
+			children = (
+				B987DD50241ACADB005CC15E /* HKStepper */,
+				B987DD4F241ACADB005CC15E /* Products */,
+				B987DD79241BA4F0005CC15E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B987DD4F241ACADB005CC15E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B987DD4E241ACADB005CC15E /* HKStepper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B987DD50241ACADB005CC15E /* HKStepper */ = {
+			isa = PBXGroup;
+			children = (
+				B9555970241D2EA00028CEBC /* Assets */,
+				B955596F241D2E960028CEBC /* Sources */,
+				B987DD52241ACADB005CC15E /* Info.plist */,
+			);
+			path = HKStepper;
+			sourceTree = "<group>";
+		};
+		B987DD79241BA4F0005CC15E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B987DD49241ACADB005CC15E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B987DD53241ACADB005CC15E /* HKStepper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B987DD4D241ACADB005CC15E /* HKStepper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B987DD56241ACADB005CC15E /* Build configuration list for PBXNativeTarget "HKStepper" */;
+			buildPhases = (
+				B987DD49241ACADB005CC15E /* Headers */,
+				B987DD4A241ACADB005CC15E /* Sources */,
+				B987DD4B241ACADB005CC15E /* Frameworks */,
+				B987DD4C241ACADB005CC15E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKStepper;
+			productName = HKStepper;
+			productReference = B987DD4E241ACADB005CC15E /* HKStepper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B987DD45241ACADB005CC15E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hasan Kassem";
+				TargetAttributes = {
+					B987DD4D241ACADB005CC15E = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = B987DD48241ACADB005CC15E /* Build configuration list for PBXProject "HKStepper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B987DD44241ACADB005CC15E;
+			productRefGroup = B987DD4F241ACADB005CC15E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B987DD4D241ACADB005CC15E /* HKStepper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B987DD4C241ACADB005CC15E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B9BDFD241CA0C200F970F0 /* HKValueStepper.xib in Resources */,
+				B987DD5C241ACCAE005CC15E /* HKTimeStepper.xib in Resources */,
+				B9555969241D2C8D0028CEBC /* minus.png in Resources */,
+				B955596A241D2C8D0028CEBC /* plus.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B987DD4A241ACADB005CC15E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B9BDFB241CA06900F970F0 /* HKValueStepper.swift in Sources */,
+				B987DD5E241ACD9F005CC15E /* HKTimeStepper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B987DD54241ACADB005CC15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B987DD55241ACADB005CC15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B987DD57241ACADB005CC15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H8VEM9S5DB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HKStepper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hasankassem.HKStepper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B987DD58241ACADB005CC15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H8VEM9S5DB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HKStepper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hasankassem.HKStepper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B987DD48241ACADB005CC15E /* Build configuration list for PBXProject "HKStepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B987DD54241ACADB005CC15E /* Debug */,
+				B987DD55241ACADB005CC15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B987DD56241ACADB005CC15E /* Build configuration list for PBXNativeTarget "HKStepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B987DD57241ACADB005CC15E /* Debug */,
+				B987DD58241ACADB005CC15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B987DD45241ACADB005CC15E /* Project object */;
+}
