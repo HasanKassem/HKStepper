@@ -19,14 +19,14 @@ open class HKTimeStepper:  UIControl{
     var time = mytime(hours: 0, minutes: 0, is24: false)
     
     ///hours in 24 format
-    @IBInspectable public var  hours: Int = 0{
+    @IBInspectable public var  hours: Int = 7{
         didSet{
             self.time.hours = hours
             updateValue()
         }
     }
     ///minutes
-    @IBInspectable public var  minutes: Int = 0{
+    @IBInspectable public var  minutes: Int = 30{
         didSet{
             self.time.minutes = minutes
             updateValue()
@@ -90,10 +90,12 @@ open class HKTimeStepper:  UIControl{
     }
     func increment(){
         time.increment(val: stepMinutes)
+        hours = time.hours
         updateValue()
     }
     func decrement(){
         time.decrement(val: stepMinutes)
+        minutes = time.minutes
         updateValue()
     }
     
@@ -156,7 +158,7 @@ open class HKTimeStepper:  UIControl{
             if is24{
                 return String(format: "%02d:%02d", hours, minutes)
             }
-            return String(format: "%02d:%02d %@", hours > 12 ? hours - 12 : hours, minutes, hours >= 12 ? pm : am)
+            return String(format: "%02d:%02d %@", hours == 0 ? 12 : hours > 12 ? hours - 12 : hours, minutes, hours >= 12 ? pm : am)
         }
         
         mutating func increment(val: Int){
