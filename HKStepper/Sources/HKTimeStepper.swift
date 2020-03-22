@@ -91,10 +91,12 @@ open class HKTimeStepper:  UIControl{
     func increment(){
         time.increment(val: stepMinutes)
         hours = time.hours
+        minutes = time.minutes
         updateValue()
     }
     func decrement(){
         time.decrement(val: stepMinutes)
+        hours = time.hours
         minutes = time.minutes
         updateValue()
     }
