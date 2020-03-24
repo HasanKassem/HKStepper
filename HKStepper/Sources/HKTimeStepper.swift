@@ -86,19 +86,20 @@ open class HKTimeStepper:  UIControl{
     
     func updateValue(){
         label.text = String(describing: time)
-        sendActions(for: .valueChanged)
     }
     func increment(){
         time.increment(val: stepMinutes)
         hours = time.hours
         minutes = time.minutes
         updateValue()
+        sendActions(for: .valueChanged)
     }
     func decrement(){
         time.decrement(val: stepMinutes)
         hours = time.hours
         minutes = time.minutes
         updateValue()
+        sendActions(for: .valueChanged)
     }
     
     
